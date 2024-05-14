@@ -1,0 +1,517 @@
+------CONSTRUCAO DO SITE------
+
+///PAGINA INICIAL\\\
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Literativa</title>
+    <style>
+         header img {
+      width: 100%;
+      height: auto;
+         }
+         * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white; 
+    width: 100%; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around; /
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange; 
+    text-align: center; 
+    width: 100%; 
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ff7f00; 
+}
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }.produto {
+            width: 100%;
+            border: 1px solid #FFA500; 
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            
+@media (min-width: 600px) {
+    .produto {
+        width: 45%; 
+    }
+}
+
+@media (min-width: 900px) {
+    .produto {
+        width: 30%; 
+    }
+}
+        
+        }.produto img {
+            width: 100%;
+            height: auto;
+        }
+        button {
+    background-color: #FFA500; 
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; 
+    margin: 4px 2px;
+    cursor: pointer;
+}
+        #carrinho {
+            clear: both;
+            border-top: 3px solid #FFA500;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        #carrinho h1 {
+    font-size: 2em; 
+}
+
+h2 {
+    font-size: 150%; 
+    text-align: center; 
+}
+ </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+          <img src="https://i.postimg.cc/ryJdDSBP/Captura-de-tela-10-5-2024-22915-mir-s3-cdn-cf-behance-net.jpg" height="500" width="1945">
+        </header> 
+        
+    </div>
+
+        <nav>
+          <ul>
+            <li><a href="livrarialiterativa.html">Lista de Livros por Genero</a></li>
+            <li><a href="contato.html">Canal de Atendimento</a></li>
+          </ul>
+        </nav>
+        <main>
+         <header></header>
+    <div id="produtos">
+        <strong><h2>Autoconhecimento</h2></strong>
+        <section class="produto" data-nome="1 Pagina de Cada Vez" data-preco="42.00" data-descricao="Um diário interativo criado por Adam J. Kurtz. Mais do que um livro, pode ser um amigo ou um diário, dependendo de como você decide usá-lo. Cada página traz uma atividade diferente, que pode ser uma pergunta, uma sugestão de desenho, ou um pedido para que você crie uma lista de músicas para seu amor verdadeiro ou das melhores fatias de pizza que comeu na vida. O autor também pede para o leitor colar objetos inusitados nas páginas do livro e compartilhar nas redes sociais algumas das anotações feitas nele. Disponível? SIM - Quantidade em estoque: 16">
+            <img src="https://a-static.mlcdn.com.br/1500x1500/livro-1-pagina-de-cada-vez/magazineluiza/212512800/f9043852903d4d438d279a7425352c04.jpg" alt="1 Pagina de Cada Vez" height="500" width="350">
+            <strong><p style="font-size: 20px;">1 Pagina de Cada Vez - R$42,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="Um Compromisso por Dia" data-preco="44.00" data-descricao="Pequenas ações diárias que podem mudar a sua vida. O livro busca inspirar o leitor a buscar o autoconhecimento, a bondade, a empatia, o desapego e a alegria de viver. O livro é composto por 365 atividades que irão inspirar e motivar o leitor a seguir pelo caminho mais leve da vida. Disponível? SIM - Quantidade em estoque: 4">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_831952-MLB47311085109_082021-O.webp" alt="Um Compromisso por Dia" height="500" width="350">
+            <strong><p style="font-size: 20px;">Um Compromisso por Dia - R$44,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="A Coragem de ser Imperfeito" data-preco="35.00" data-descricao="Um livro que convida você a aceitar sua vulnerabilidade e buscar a autenticidade em sua vida. Através de exemplos pessoais e insights poderosos, a autora Brené Brown mostra como a coragem de ser imperfeito pode ser a chave para a felicidade e realização. Disponível? SIM - Quantidade em estoque: 1">
+            <img src="https://a-static.mlcdn.com.br/800x560/livro-a-coragem-de-ser-imperfeito-brene-brown/magazineluiza/221851000/d4a16cdaf5f3801b726764bbe4cd7728.jpg" alt="A Coragem de ser Imperfeito" height="500" width="350">
+            <strong><p style="font-size: 20px;">A Coragem de ser Imperfeito - R$35,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="Autocontrole Emocional" data-preco="16.00" data-descricao="Um guia para uma mente calma e decidida. O livro explora a importância desse autocontrole, mergulhando nas diversas técnicas e práticas que podem auxiliar na gestão eficaz de nossas emoções. Disponível? SIM - Quantidade em estoque: 3">
+            <img src="https://icakbar.com.br/wp-content/uploads/2019/01/AUTO-CONTROLE_CAPA.jpg" alt="Autocontrole Emocional" height="500" width="350">
+            <strong><p style="font-size: 20px;">Autocontrole Emocional - R$16,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button><br>
+        </section>
+        <strong><h2>Romance</h2></strong>
+        <section class="produto" data-nome="Como Eu Era Antes de Voce" data-preco="40.00" data-descricao="Um romance que conta a história de Louisa Clark. Louisa trabalha como garçonete num café, um emprego que não paga muito, mas ajuda nas despesas, e namora Patrick, um triatleta que não parece interessado nela. Disponivel? NAO - Produto Esgotado!">
+            <img src="https://cdn.maioresemelhores.com/imagens/mm-livros-9-cke.jpg" alt="Como Eu Era Antes de Voce" height="500" width="350">
+            <strong><p style="font-size: 20px;">Como Eu Era Antes de Voce - R$40,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="P.S. Eu Te Amo" data-preco="20.00" data-descricao="Um romance que conta a história de Holly e Gerry, que eram namorados de infância e ficariam juntos para sempre, até que o inimaginável acontece e Gerry morre, deixando Holly devastada. Conforme seu aniversário de 30 anos se aproxima, Holly descobre um pacote de cartas nas quais Gerry, gentilmente, a guia em sua nova vida sem ele. Disponivel? SIM - Quantidade em estoque: 3">
+            <img src="https://3.bp.blogspot.com/-uGE08AbW_Ro/UGs2cAjB_4I/AAAAAAAAF-0/X8lYQ9HcIZ8/s1600/PS+Eu+te+Amo.jpg" alt="P.S. Eu Te Amo" height="500" width="350">
+            <strong><p style="font-size: 20px;">P.S. Eu Te Amo - R$20,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="A Virgem e o Milionario" data-preco="5.00" data-descricao="Uma história emocionante, divertida, comovente e cativante. É uma narrativa fluida, cheia de detalhes interessantes e emocionais que vão desde o romance entre Leila e Félix até a auto-aceitação de Leila e sua jornada de auto-descoberta. Disponível? SIM - Quantidade em estoque: 16">
+            <img src="https://i.pinimg.com/736x/63/38/b4/6338b41bc5ddd772027eb9d784264123.jpg" alt="A Virgem e o Milionario" height="500" width="350">
+            <strong><p style="font-size: 20px;">A Virgem e o Milionario - R$5,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="A Culpa é das Estrelas" data-preco="50.00" data-descricao="Um livro que fala sobre câncer e o amor adolescente. Mas ele é um pouco mais do que isso. Essa história de John Green tem uma particularidade: o livro é realmente engraçado. Disponivel? SIM - Quantidade em estoque: 4">
+            <img src="https://4.bp.blogspot.com/-KrAoVAuzGV8/U6ClISnffSI/AAAAAAAAEYY/i0aWcSJJFVQ/s1600/a+culpa+%C3%A9+das+estrelas+capa+especial.jpg" alt="A Culpa é das Estrelas" height="500" width="350">
+            <strong><p style="font-size: 20px;">A Culpa é das Estrelas - R$50,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <strong><h2>Terror</h2></strong>
+        <section class="produto" data-nome="It A Coisa" data-preco="80.00" data-descricao="Um livro que conta a história de um grupo de amigos que enfrentam uma entidade sobrenatural e maligna que vive na cidade de Derry. A entidade, que eles chamam de A Coisa, se manifesta como o palhaço Pennywise e se alimenta dos medos e angústias das crianças. Disponível? SIM - Quantidade em estoque: 8">
+            <img src="https://a-static.mlcdn.com.br/1500x1500/livro-it-a-coisa/magazineluiza/210947500/15236b2101e641b2bfa512f9d95de4e1.jpg" alt="It A Coisa" height="500" width="350">
+            <strong><p style="font-size: 20px;">It A Coisa - R$80,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="A Casa Assombrada e Outros Contos" data-preco="80.00" data-descricao="Uma coletânea de contos de Virginia Woolf. Os contos são todos bastante diferentes e trazem a visão feminista claramente presente, onde os homens tiram o brilho à vida da mulher. Disponível? SIM - Quantidade em estoque: 7">
+            <img src="https://editoraflorearlivros.com.br/wp-content/uploads/2022/01/CASA-ASSOMBRADA_CAPA_FLOREAR-674x1024.jpg" alt="A Casa Assombrada e Outros Contos" height="500" width="350">
+            <strong><p style="font-size: 20px;">A Casa Assombrada e Outros Contos - R$80,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="Melodia do Mal" data-preco="26.00" data-descricao="Um livro que explora a maldade e a construção da empatia humana. Todos os personagens têm uma atmosfera de desajuste, de violência física ou sexual ou de simplesmente não ligar para os outros. Disponível? SIM - Quantidade em estoque: 8">
+            <img src="https://2.bp.blogspot.com/-qfepMnMDKAQ/WIZbvmezXuI/AAAAAAAAJ0k/PYaVhjQ3DDUXQGktV7LxA1bMr8s-dDxSQCK4B/s1600/MelodiadoMalbyBibliotecadoTerror.jpg" alt="Melodia do Mal" height="500" width="350">
+            <strong><p style="font-size: 20px;">Melodia do Mal - R$26,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="produto" data-nome="O Exorcista" data-preco="25.00" data-descricao="Um livro que conta a história de uma jovem possuída por um demônio e o padre que tenta exorcizá-la. O livro é assustador e em alguns momentos você se convence que o narrador é o próprio demônio. Disponível? NÃO - Produto Esgotado!">
+            <img src="https://3.bp.blogspot.com/-05Y_LBEFPvc/WoHOivhcPTI/AAAAAAAAFxI/nPg8QLxJ0I0HJRHsQP6N7WMz0zC-8zJZwCLcBGAs/s1600/o-exorcista-the-exorcist-livro-terror.jp" alt="O Exorcista" height="500" width="350">
+            <strong><p style="font-size: 20px;">O Exorcista - R$25,00</p></strong>
+            <button onclick="mostrarDetalhes(this)">Detalhes</button>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </section>
+    </div>
+    <div id="carrinho">
+        <h1>Carrinho</h1>
+        <table id="tabelacarrinho">
+            </table>
+            <p id="total"></p>
+    </div>
+    <script>
+        var carrinho = {};
+
+        function adicionarAoCarrinho(botao) {
+            var produto = botao.parentElement;
+            var nome = produto.getAttribute('data-nome');
+            var preco = parseFloat(produto.getAttribute('data-preco'));
+            if (carrinho[nome]) {
+                carrinho[nome].quantidade += 1;
+            } else {
+                carrinho[nome] = {preco: preco, quantidade: 1};
+            }
+            atualizarCarrinho();
+        }
+
+        function removerDoCarrinho(nome) {
+            delete carrinho[nome];
+            atualizarCarrinho();
+        }
+
+        function adicionarAoCarrinho(botao) {
+    var produto = botao.parentElement;
+    var nome = produto.getAttribute('data-nome');
+    var preco = parseFloat(produto.getAttribute('data-preco'));
+    if (carrinho[nome]) {
+        carrinho[nome].quantidade += 1;
+    } else {
+        carrinho[nome] = {preco: preco, quantidade: 1};
+    }
+    atualizarCarrinho();
+}
+
+function removerDoCarrinho(nome) {
+    delete carrinho[nome];
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+    var carrinhoDiv = document.getElementById('carrinho');
+    var total = 0;
+
+
+    while (carrinhoDiv.firstChild) {
+        carrinhoDiv.removeChild(carrinhoDiv.firstChild);
+    }
+
+    
+    var h1 = document.createElement('h1');
+    h1.textContent = 'Carrinho';
+    carrinhoDiv.appendChild(h1);
+
+    for (var nome in carrinho) {
+        var preco = carrinho[nome].preco;
+        var quantidade = carrinho[nome].quantidade;
+        total += preco * quantidade;
+
+        
+        var div = document.createElement('div');
+        div.textContent = nome + ' - R$' + preco + ' x ' + quantidade + ' ';
+
+       
+var button = document.createElement('button');
+button.textContent = 'Remover';
+button.style.transform = 'scale(0.7)'; 
+button.onclick = function() { removerDoCarrinho(nome); };
+div.appendChild(button);     
+        carrinhoDiv.appendChild(div);
+    }
+
+    
+var p = document.createElement('p');
+p.id = 'total';
+p.style.fontSize = '1.5em'; 
+p.innerHTML = '<strong>Total: R$' + total.toFixed(2) + '</strong>'; 
+carrinhoDiv.appendChild(p);
+}
+
+function mostrarDetalhes(botao) {
+    var produto = botao.parentElement;
+    var descricao = produto.getAttribute('data-descricao');
+
+    
+    var modal = document.createElement("div");
+    modal.innerHTML = descricao;
+
+    
+    var closeButton = document.createElement("button");
+    closeButton.innerHTML = "X";
+    closeButton.style.position = "absolute";
+    closeButton.style.top = "0";
+    closeButton.style.right = "0";
+    closeButton.style.background = "none";
+    closeButton.style.border = "none";
+    closeButton.style.fontSize = "20px";
+    closeButton.style.cursor = "pointer";
+
+    
+    modal.appendChild(closeButton);
+
+    
+    closeButton.addEventListener("click", function() {
+        document.body.removeChild(modal);
+    });
+
+    
+    modal.style.position = "fixed";
+    modal.style.top = "50%";
+    modal.style.left = "50%";
+    modal.style.transform = "translate(-50%, -50%)";
+    modal.style.background = "#000"; 
+    modal.style.color = "#FFF"; 
+    modal.style.padding = "20px";
+    modal.style.borderRadius = "5px";
+    modal.style.zIndex = "1"; 
+    modal.style.width = "300px"; 
+    modal.style.height = "200px";
+    modal.style.overflow = "auto"; 
+
+  
+    document.body.appendChild(modal);
+}    
+    </script>
+</body>
+</html>
+
+
+///PAGINA DE CONTATO\\\
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .info {
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid orange;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+    }
+    .info h2 {
+      color: orange;
+      text-transform: uppercase; 
+      font-size: 1.5em; 
+      border-bottom: 1px solid orange; 
+      padding-bottom: 10px; 
+    }
+    .info p {
+      font-size: 1.2em; 
+      line-height: 1.6; 
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .header img {
+      width: 100%;
+      height: auto;
+    }
+    .back-button {
+      display: block;
+      width: 100px;
+      height: 40px;
+      margin: 20px auto;
+      background-color: orange;
+      text-align: center;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      line-height: 40px;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .info {
+        margin: 10px;
+        padding: 10px;
+      }
+      .info h2 {
+        font-size: 1.2em;
+      }
+      .info p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="https://i.postimg.cc/ryJdDSBP/Captura-de-tela-10-5-2024-22915-mir-s3-cdn-cf-behance-net.jpg" alt="Image">
+  </div>
+  <div class="info">
+    <h2>Email</h2>
+    <p>contatolivraria@gmail.com</p>
+  </div>
+  <div class="info">
+    <h2>Whatsapp</h2>
+    <p>(27) 99876-5432</p>
+    
+  </div>
+  <a href="lista.html" class="back-button" onclick="window.history.back(); return false;">Voltar</a>
+  <footer>
+    <footer style="background-color: orange; text-align: center; padding: 5px; position: fixed; left: 0; bottom: 0; width: 100%;">
+    </footer>
+  </footer>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent && new Date().toISOString().slice(0, 10) > '2023-10-29' && new Date().toISOString().slice(0, 10) < '2023-11-27'){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="The Biggest Ever <span style='color: #FF5C62;'>Black Friday</span> Sale<div style='font-size: 16px;line-height: 24px;font-weight: 400;margin-top: 12px;'><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Managed WordPress Hosting</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>WordPress Acceleration</div><div style='display: flex;justify-content: flex-start;align-items: center;'><img src='https://www.000webhost.com/static/default.000webhost.com/images/generic/green-check-mark.png' alt='' style='margin-right: 10px; width: 20px;'>Support from WordPres Experts 24/7</div></div>",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 46px; font-weight: 700;');h2Tag=document.createElement("H2");h2Tag.innerHTML="<span style='font-size: 20px'>$</span>2.49<span style='font-size: 20px'>/mo</span>",h2Tag.setAttribute("style",'color: white; margin: 10px 0 0 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="<span style='text-decoration:line-through; font-size: 14px; color:#727586'>$11.99.mo</span><br>+ 2 Months Free",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 15px; 0');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper" style="height: 90%"><img class="web-hosting-90-off-image" src="https://www.000webhost.com/static/default.000webhost.com/images/sales/bf2023/hero.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}else if(null!=wordpressAdminBody&¬ification.length>0&&null!=mainContent){var bulletPoints = mainContent.getElementsByTagName('li');var replacement=['Increased performance (up to 5x faster) - Thanks to Hostinger’s WordPress Acceleration and Caching solutions','WordPress AI tools - Creating a new website has never been easier','Weekly or daily backups - Your data will always be safe','Fast and dedicated 24/7 support - Ready to help you','Migration of your current WordPress sites to Hostinger is automatic and free!','Try Premium Web Hosting now - starting from $1.99/mo'];for (var i=0;i<bulletPoints.length;i++){bulletPoints[i].innerHTML = replacement[i];}}</script></body>
+
+</html>
+
+------TRANSFORMACAO DO SITE EM APP PELO ANDROID STUDIO------
+
+///ARQUIVO MAIN ACTIVY KLOTIN\\\
+
+package br.com.areatechbrasil.livrarialiterativa
+
+import android.net.http.SslError
+import android.webkit.SslErrorHandler
+import android.os.Bundle
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.viewinterop.AndroidView
+import android.app.AlertDialog
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MyWebView()
+        }
+    }
+
+    override fun onBackPressed() {
+        AlertDialog.Builder(this)
+            .setIcon(android.R.drawable.ic_dialog_alert)
+            .setTitle("Sobre o Aplicativo Livraria Literativa")
+            .setMessage("Livraria Literativa\nVersão: 1.0.0\nTema: Venda de Livros\nDesenvolvedor: vitoriacpet@email.com\nComercio/Livraria")
+            .setPositiveButton("Fechar") { _, _ -> super.onBackPressed() }
+            .setNegativeButton("Cancelar", null)
+            .show()
+    }
+}
+
+@Composable
+fun MyWebView() {
+    AndroidView(factory = { context ->
+
+        WebView(context).apply {
+            this.settings.javaScriptEnabled = true
+            this.settings.domStorageEnabled = false
+            this.webViewClient = object : WebViewClient() {
+                override fun onReceivedSslError(view: WebView, handler: SslErrorHandler, error: SslError) {}
+            }
+            this.loadUrl("https://livrariabook.000webhostapp.com/livrarialiterativa.html")
+        }
+    })
+}
+
+
+///ARQUIVO ANDROID MANIFEST.XML\\\
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.areatechbrasil.livrarialiterativa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Livraria Literativa"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LivrariaLiterativa"
+        tools:targetApi="31">
+        <activity
+            android:name="br.com.areatechbrasil.livrarialiterativa.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LivrariaLiterativa">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
+
